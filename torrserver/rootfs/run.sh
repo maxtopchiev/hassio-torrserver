@@ -17,7 +17,7 @@ declare -A ARCH_MAP="( [armv7]=arm7 [amd64]=amd64 [i386]=386 [aarch64]=arm64 )"
 TS_SOURCE="TorrServer-linux-${ARCH_MAP[${BUILD_ARCH}]}"
 echo "TS_SOURCE=${TS_SOURCE}"
 
-TS_URL="https://github.com/YouROK/TorrServer/releases/latest/download/${TS_SOURCE}"
+TS_URL="https://github.com/YouROK/TorrServer/releases/download/MatriX.132/TorrServer-linux-arm64"
 echo "TS_URL=${TS_URL}"
 
 TS_VERSION="$(curl -sL https://api.github.com/repos/YouROK/TorrServer/releases/latest | jq -r '.tag_name')"
